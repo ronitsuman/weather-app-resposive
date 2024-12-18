@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-pannel{
+    width: 600px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with 50% transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes corners rounded */
+    text-align: center;
+    color: white; /* Text color to stand out on black background */
+}
+.search-box input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    padding: 40px;
+    text-transform: capitalize;
+    font-size: 20px;
+    word-spacing: 10px;
+
+    
+}
+.search-box input::placeholder{
+    padding: 3rem;
+}
+.search-box input:hover{
+    border-bottom: 5px solid gray;
+}
+.search-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box .fa-location-dot{
+    position: absolute;
+    font-size: 30px;
+    top: 25px;
+    left: 55px;
+}
+.search-box .fa-magnifying-glass{
+    position: relative;
+    right: 45px;
+    font-size: 30px;
+}
+.weather-result-img{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.temperature-tittle span{
+    font-size: 50px;
+}
+.temperature-tittle sup{
+    font-size: 50px;
+}
+.widget{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+.humi,.airtext{
+    font-size: 15px;
+   
+}
+.humidity{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.humidity img{
+    width: 40px;
+}
+.air img{
+    width: 40px;
+}
+
+.air{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.temperature-tittle{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    
+
+}
+@media (min-width:350px) and (max-width:500px){
+    .main{
+        width: 530px;
+        height: 900px;
+        
+    }
+
+    .weather-pannel{
+        width: 390px;
+    
+    }
+    .search-box .fa-magnifying-glass{
+        position: relative;
+        right: 35px;
+        font-size: 30px;
+    }
+    .search-box .fa-location-dot{
+        position: absolute;
+        font-size: 30px;
+        top: 25px;
+        left: 40px;
+    }
+    .search-box input::placeholder{
+        word-spacing: 0;
+    }
+    
+}

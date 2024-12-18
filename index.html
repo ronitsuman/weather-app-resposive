@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather (by coderRonit)</title>
+    <!-- linking css file -->
+     <link rel="stylesheet" href="styles.css">
+     <!-- linking a font awesome  file  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+</head>
+<body>
+    <!-- main page here starts -->
+    <div class="main">
+        <!-- weather pannel start here  -->
+
+       <div class="weather-pannel">
+        <!-- search box start here  -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your city Here ">
+            <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            
+        </div>
+        <!-- search box ends here  -->
+         <!-- cloud images starts here -->
+         <div class="weather-result-img">
+            <img src="img/clouds.png" alt="">         
+         </div>
+         <!-- clouds images ends here  -->
+          <!-- temperatre section starts here -->
+          <section class="temperature-tittle">
+            <span class="temp">19<sup>°C</sup> </span> 
+            <span class="city">New york </span>
+
+          </section>
+          <!-- temperature section ends here  -->
+
+          <!-- widget get starts here  -->
+           <div class="widget">
+            <!-- humidity start here -->
+            <div class="humidity">
+                <img src="img/humidity.png" alt="">
+                <span class="humi">64%</span>
+                <p>Humidity</p>
+
+            </div>
+            <!-- humidity ends here -->
+             <!-- air start here  -->
+            <div class="air">
+                <img src="img/wind.png" alt="">
+                <span class="airtext">18km/h</span>
+                <p class="airtext">Wind Speed</p>
+
+            </div>
+            <!-- air ends here -->
+           </div>
+          <!-- widget get ends here  -->
+
+
+         
+
+       </div>
+       <!-- weather pannel ends here  -->
+
+    </div>
+    <!-- main page ends here  -->
+     <!-- script starts here  -->
+      <script src="script.js"></script>
+     <!-- script ends here  -->
+</body>
+</html>

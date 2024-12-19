@@ -17,7 +17,7 @@ async function fetchWeather(city) {
         );
 
         if (!response.ok) {
-            throw new Error("City not found");
+            return new Error("City not found");
         }
 
         const data = await response.json();

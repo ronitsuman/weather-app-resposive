@@ -24,7 +24,7 @@ body{
     color: white; /* Text color to stand out on black background */
 }
 .search-box input {
-    width: 450px;
+    width: 480px;
     height: 40px;
     border: none;
     background-color: black;
@@ -36,10 +36,11 @@ body{
     
 }
 .search-box input::placeholder{
-    padding: 3rem;
+    padding: 1rem;
 }
 .search-box input:hover{
     border-bottom: 5px solid gray;
+    border-top: 4px solid green;
 }
 .search-box{
     position: relative;
@@ -51,12 +52,32 @@ body{
     position: absolute;
     font-size: 30px;
     top: 25px;
-    left: 55px;
+    left: 22px;
 }
-.search-box .fa-magnifying-glass{
+input:active{
+    border: none ;
+    color: black;
+    background-color: white;
+}
+button {
     position: relative;
-    right: 45px;
+    right: 75px;
     font-size: 30px;
+    color: black;
+    border: none ;
+}
+button{
+    width: 70px;
+    text-transform: capitalize;
+    font-size: large;
+    background-color: black;
+    color: white ;
+
+
+}
+button:hover{
+    background-color: white;
+    color: black;
 }
 .weather-result-img{
     
@@ -131,6 +152,7 @@ body{
         font-size: 30px;
     }
     .search-box .fa-location-dot{
+        display: none;
         position: absolute;
         font-size: 30px;
         top: 25px;
@@ -138,6 +160,25 @@ body{
     }
     .search-box input::placeholder{
         word-spacing: 0;
+        color: white;
+    }
+    .search-box input {
+        color: white;
+    
+        
+    }
+    .search-box input::placeholder{
+        padding: 1rem;
+    }
+    .search-box input:hover{
+        border-bottom: 5px solid rgb(161, 44, 44);
+    }
+    button {
+        position: relative;
+        right: 10px ;
+        font-size: 20px;
+        color: white;
+        border: none ;
     }
     
 }

@@ -41,6 +41,8 @@ body{
 .search-box input:hover{
     border-bottom: 5px solid gray;
     border-top: 4px solid green;
+    border-left: 4px solid yellow;
+    border-right: 4px solid red;
 }
 .search-box{
     position: relative;
